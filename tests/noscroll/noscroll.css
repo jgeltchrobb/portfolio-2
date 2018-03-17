@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+                
+.overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: scroll;
+
+}
+.overlay-content {
+    height: 100%;
+    overflow: scroll;
+}
+  
+.background-content{
+    height: 100%;
+    overflow: auto;
+}

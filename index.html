@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="scripts.js"></script>
 </head>
-<body>
+<body id="background">
     <div id="top_page">
         <div class="page_half">
             <nav class="nav_bar">
                 <ul>
-                    <li>Home</li>
-                    <li>Portfolio</li>
+                    <li><a href="#">Home</a></li>                    
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li>About</li>
                 </ul>
             </nav>
@@ -44,15 +44,52 @@
                 <div id="forth_line"></div>
             </div>
             <footer id="contact_bar">
-                    <div>G</div>
-                    <div>T</div>
-                    <div>L</div>
-                    <div>E</div>
+                    <img class="contact_img" src="/images/github_new.png" alt="">
+                    <img class="contact_img" src="/images/linkedin_new.png" alt="">
             </footer>
             <div class="down_arrow"> 
                 <a href="#bottom_page" onclick="test('bottom_page'); return false;"></a>
             </div>
         </div>
+        <div id="top_buttons">
+            <button id="port_button" onclick="port_overlay()"><span>PORTFOLIO</span></button>
+            <a href="https://github.com/jgeltchrobb"><img class="contact_img" src="/images/github_new.png" alt=""></a>
+            <a href="http://www.google.com"><img class="contact_img" src="/images/linkedin_new.png" alt=""></a>
+        </div>
+    </div>
+    <div id="top_portfolio" class="overlay">
+        <div id="overlay-content">
+            <div id="one">
+                <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+                <h2>Work Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+            </div>
+            <div id="two">
+                <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+                <h2>Work Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+            </div>
+            <div id="three">
+                <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+                <h2>Work Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+            </div>
+            <div id="four">
+                <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+                <h2>Work Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+            </div>
+            <div id="five">
+            <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+            <h2>Work Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+            </div>   
+            <div id="six">
+            <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+            <h2>Work Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+            </div>
+        </div>  
     </div>
     <div id="bottom_page">
         <div id="cover"></div>
@@ -62,7 +99,7 @@
         <nav class="nav_bar">
                 <ul>
                     <li>Home</li>
-                    <li>Portfolio</li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li>About</li>
                 </ul>
             </nav>
@@ -90,31 +127,36 @@
             <div id="about_me_wall"></div>
         </div>
             <div id="portfolio">
-                <div class="one">
-                    <img src="http://lorempixel.com/400/200">
+                <div id="one">
+                    <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
                     <h2>Work Title</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
                 </div>
-                <div class="two">
-                        <img src="http://lorempixel.com/400/200">
+                <div id="two">
+                    <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
                         <h2>Work Title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
                 </div>
-                <div class="three">
-                        <img src="http://lorempixel.com/400/200">
+                <div id="three">
+                    <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
                         <h2>Work Title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
                 </div>
-                <div class="four">
-                        <img src="http://lorempixel.com/400/200">
+                <div id="four">
+                    <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
                         <h2>Work Title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
                 </div>
-                <div class="five">
-                        <img src="http://lorempixel.com/400/200">
+                <div id="five">
+                    <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
                         <h2>Work Title</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
-                </div>               
+                </div>   
+                <div id="six">
+                    <a href="portfolio.html"><img src="http://lorempixel.com/400/200"></a>
+                    <h2>Work Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, beatae?</p>
+               </div>                      
             </div>
             <div class="right_wall">
                 <div id="about_me">
@@ -138,12 +180,10 @@
                 <button id="port_button" onclick="port_flip()">PORTFOLIO</button>
                 <button id="about_button" onclick="about_flip()">ABOUT ME</button>
             </div>
-            <div id="lines">
-                <div id="left_line"></div>
-                <div id="left_middle"></div>
-                <div id="right_middle"></div>
-                <div id="right_line"></div>
-            </div>
+            <footer id="contact_bar">
+                    <img class="contact_img" src="/images/github_new.png" alt="">
+                    <img class="contact_img" src="/images/linkedin_new.png" alt="">
+            </footer>
         </div>
 </body>
 </html>
