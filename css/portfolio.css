@@ -49,6 +49,7 @@ body {
     position: relative;
     text-align: center;
     line-height: 4em;
+    font-family: 'Open sans', sans-serif;
 }
 
 #container {
@@ -77,11 +78,16 @@ body {
 }
 
 .item > h1 {
-    border-bottom: 2px solid black;        
+    border-bottom: 2px solid black; 
+    font-family: 'Open sans', sans-serif;       
 }
 
 .item > p {
     width: 70%;
+}
+
+.item > img {
+    border: 2px solid darkcyan;
 }
 
 #contact_img {

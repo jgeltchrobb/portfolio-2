@@ -109,6 +109,7 @@ a, a:visited, a:focus, a:active, a:hover {
     font-size: 3em;
     line-height: 1.1em;
     z-index: 1;
+    font-family: 'Open sans', sans-serif;
 }
 
 #my_name > h1:first-child {
@@ -129,6 +130,7 @@ a, a:visited, a:focus, a:active, a:hover {
     color: black;
     font-size: 3em;
     line-height: 1.1em;
+    font-family: 'Open sans', sans-serif;
 }
 
 .line_graphic {
@@ -252,14 +254,20 @@ footer {
 #portfolio > div > a {
     margin-top: 2.5em;
     transition: .3s ease;
+    border: 2px solid darkcyan;
 }
 #portfolio > div > a:hover {
     transform: scale(1.1);
-  }
+}
 
 #portfolio > div > h2, p {
     text-align: center;
     margin: 0 1.5em;
+}
+
+#portfolio > div > h2 {
+    font-family: 'Open sans', sans-serif; 
+    margin: 1.2em 0;
 }
 
 #portfolio.port_flipped {
@@ -312,6 +320,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 #jordan > img {
     margin-left: 6em;
     margin-top: 2em;
@@ -325,6 +334,17 @@ footer {
 
 #jordan .words > h2 {
     text-align: center;
+    font-family: 'Open sans', sans-serif;     
+}
+
+#jordan .words > p {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+#jordan .words > p > span {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #more_stuff {
@@ -448,6 +468,7 @@ footer {
     font-weight: bold;    
     border: rgba(0, 0, 0, 0.8);
     box-shadow: 2px 2px black;
+    border-radius: 0.5em;    
 }
 .port_button:hover, #about_button:hover {
     transform: scale(1.1);
