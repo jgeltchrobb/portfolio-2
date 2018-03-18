@@ -1,6 +1,5 @@
-add small triangles into nav corner
-add about page
-smooth scrolling on arrows
-phone size responsiveness
-all buttons pop
+fonts
+
 make linkedin account
+
+write bios?

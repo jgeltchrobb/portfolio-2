@@ -32,4 +32,4 @@ function port_overlay() {
     document.getElementById('my_name').classList.toggle('words_blur');
     document.getElementById('full_stack').classList.toggle('words_blur');   
     
-}
+};

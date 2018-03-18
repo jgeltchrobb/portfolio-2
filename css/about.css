@@ -1,0 +1,175 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#small_triangle {
+    position: absolute;
+    width: 50px;
+    z-index: 4;
+    top: 0.4em;
+    left: 0.4em;
+    filter: brightness(300%)
+}
+
+#inner_skills {
+    display: none;
+}
+
+#bio > img {
+    width: 40%;
+}
+
+#bio > p {
+    margin-top: 3em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.nav_bar {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid darkcyan;
+}
+
+.nav_bar ul {
+    list-style: none;
+    display: flex;
+    z-index: 1;
+}
+
+.nav_bar > ul > li, a {
+    padding: 0 1.3em;
+    color: white;
+    text-decoration: none;
+}
+
+#title {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    line-height: 4em;
+    margin-right: 7em;
+    
+}
+
+#container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+#icons > img {
+    margin: 0 1em;
+    margin-bottom: 1.5em;
+    height: 128px;
+    width: 128px;
+}
+
+.item:nth-child(odd) {
+    border-right: 3px solid darkcyan;
+}
+
+.item:nth-child(even) {
+    border-left: 3px solid darkcyan;    
+}
+
+.item > h1 {
+    border-bottom: 2px solid black;        
+}
+
+.item > p {
+    width: 70%;
+}
+
+.contact_img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact_img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 3px solid darkcyan;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer > a > #uptop {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    #bio > img {
+        width: 60%;
+    }
+
+    #contact_img {
+        justify-content: space-evenly;
+    }
+
+    #contact_img > img {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_bar {
+        z-index: 1;
+        justify-content: space-between;
+    }
+
+    .nav_bar > ul > li {
+        padding: 0 1.5em;
+        margin: 0;
+    }
+
+    #bio {
+        margin: 0;
+    }
+
+    #title {
+        line-height: 2.3em;
+        text-align: center;
+        margin-left: 5.5em;
+    }
+
+    #skills_title {
+        display: none;
+    }
+
+    #inner_skills {
+        display: block;
+    }
+}
