@@ -4,7 +4,9 @@ body {
     font-family: sans-serif;
     width: 100%;
 }
-
+#small_triangle {
+    visibility: hidden;
+}
 .contact_img {
     width: 30%;
     height: 30%;
@@ -488,6 +490,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    #small_triangle {
+        visibility: visible;        
+        position: absolute;
+        width: 50px;
+        z-index: 4;
+        top: 0.4em;
+        left: 0.4em;
+        filter: brightness(300%)
+    }
     .contact_bar {
         display: none;
     }
@@ -561,7 +572,7 @@ footer {
         padding: 0 0.4em;
     }
 
-    #triangle_container {
+    #big_triangle_container {
         display: none;
     }
 
