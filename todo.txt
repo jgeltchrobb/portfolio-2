@@ -1,0 +1,9 @@
+smaller navbar fonts on phone
+bigger on ipad
+media query nav bar triangle smaller
+tracys IE work around
+responsive wireframes
+
+test on all devices in inspector
+
+maybe logo squiggles?

@@ -1,3 +1,13 @@
+$(document).on('turbolinks:load', function () {
+    if (
+      navigator.appName == 'Microsoft Internet Explorer'
+      || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))
+      || (typeof $.browser !== "undefined" && $.browser.msie == 1)
+    ) {
+      alert('This website is best viewable in Chrome or Firefox.')
+    }
+});
+
 function port_flip() {
     document.getElementById('portfolio').classList.toggle('port_flipped'); 
     if (about_me.classList.contains("about_flipped")) {

@@ -126,7 +126,7 @@ footer > a > #uptop {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
     #bio > img {
         width: 60%;
     }
@@ -138,9 +138,24 @@ footer > a > #uptop {
     #contact_img > img {
         margin: 0 1em;
     }
+
+    .nav_bar {
+        width: 100%;
+        justify-content: center;
+        border: 2px solid darkcyan
+    }
+
+    .nav_bar > ul {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .nav_bar > ul > a > li {
+        font-size: 1.3em;   
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 421px) {
     #container {
         display: flex;
         flex-direction: column;
@@ -154,6 +169,10 @@ footer > a > #uptop {
     .nav_bar > ul > li {
         padding: 0 1.5em;
         margin: 0;
+    }
+
+    .nav_bar > ul > a > li {
+        font-size: 1em;
     }
 
     #bio {

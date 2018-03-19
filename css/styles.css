@@ -4,9 +4,11 @@ body {
     font-family: sans-serif;
     width: 100%;
 }
+
 #small_triangle {
     visibility: hidden;
 }
+
 .contact_img {
     width: 30%;
     height: 30%;
@@ -489,16 +491,17 @@ footer {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
     #small_triangle {
         visibility: visible;        
         position: absolute;
-        width: 50px;
+        width: 40px;
         z-index: 4;
         top: 0.4em;
         left: 0.4em;
         filter: brightness(300%)
     }
+    
     .contact_bar {
         display: none;
     }
@@ -513,12 +516,17 @@ footer {
 
     .nav_bar {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
         border: 2px solid darkcyan
     }
 
-    .nav_bar > ul > li {
-        padding: 0 6em;  
+    .nav_bar > ul {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .nav_bar > ul > li > a {
+        font-size: 1.3em;   
     }
 
     #my_name {
@@ -648,7 +656,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 421px) {
     .nav_bar {
         border: none;
         border-bottom: 2px solid darkcyan;
@@ -660,6 +668,10 @@ footer {
     .nav_bar > ul > li {
         padding: 0 1.5em;
         margin: 0;
+    }
+
+    .nav_bar > ul > li > a {
+        font-size: 1em;
     }
 
     #top_buttons > button > span {
