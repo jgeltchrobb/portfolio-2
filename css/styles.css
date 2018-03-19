@@ -192,13 +192,13 @@ footer {
 
 #big_triangle_container {
     position: absolute;
-    top: 20%;
-    left: 35%;
+    top: 14.5%;
+    left: 33%;
 }
 
 #big_triangle_container > img {
-    width: 55%;
-    height: 55%;
+    width: 50%;
+    height: 50%;
 }
 
 #bottom_page {
@@ -417,13 +417,13 @@ footer {
 
 #mid_frame #triangle_container{
     position: absolute;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-13.5%, -65%)
 }
 #mid_frame #triangle_container > img {
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
 }
 
 #mid_frame .line_graphic {
@@ -523,6 +523,7 @@ footer {
 
     #my_name {
         align-items: flex-start;
+        margin-bottom: 1em;
     }
 
     #my_name > h1 {
@@ -538,7 +539,7 @@ footer {
     }
 
     #full_stack > h1:first-child {
-        margin-top: 1.6em;
+        margin-top: 0.5em;
     }
 
     #top_buttons {
@@ -647,7 +648,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .nav_bar {
         border: none;
         border-bottom: 2px solid darkcyan;

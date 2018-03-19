@@ -6,7 +6,7 @@ body {
 
 #small_triangle {
     position: absolute;
-    width: 50px;
+    width: 40px;
     z-index: 4;
     top: 0.4em;
     left: 0.4em;
@@ -132,7 +132,7 @@ footer > a > #uptop {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .nav_bar {
         z-index: 1;
         justify-content: space-between;
