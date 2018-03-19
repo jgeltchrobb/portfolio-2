@@ -1,3 +1,10 @@
+var version = detectIE();
+
+if (version === false) {
+    alert("Using IE")
+//   document.getElementById('result').innerHTML = '<s>IE/Edge</s>';
+}
+
 function port_flip() {
     document.getElementById('portfolio').classList.toggle('port_flipped'); 
     if (about_me.classList.contains("about_flipped")) {
