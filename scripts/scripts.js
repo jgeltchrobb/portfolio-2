@@ -1,6 +1,4 @@
-var isIE = (navigator.userAgent.indexOf("MSIE"));
-// != -1
-if (isIE === false) {
+if (navigator.appName == 'Microsoft Internet Explorer'){
     alert("This website does not display effectively on Internet Explorer - Please download a browser from this decade")
 }
 
