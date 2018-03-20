@@ -1,6 +1,6 @@
-var version = detectIE();
+var isIE = (navigator.userAgent.indexOf("MSIE") != -1);
 
-if (version === false) {
+if (isIE === false) {
     alert("Using IE")
 //   document.getElementById('result').innerHTML = '<s>IE/Edge</s>';
 }
