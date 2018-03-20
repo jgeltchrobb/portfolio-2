@@ -1,6 +1,2 @@
-tracys IE work around
+
 responsive wireframes
-
-test on all devices in inspector
-
-maybe logo squiggles?

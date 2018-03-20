@@ -1,8 +1,7 @@
-var isIE = (navigator.userAgent.indexOf("MSIE") != -1);
-
+var isIE = (navigator.userAgent.indexOf("MSIE"));
+// != -1
 if (isIE === false) {
-    alert("Using IE")
-//   document.getElementById('result').innerHTML = '<s>IE/Edge</s>';
+    alert("This website does not display effectively on Internet Explorer - Please download a browser from this decade")
 }
 
 function port_flip() {
