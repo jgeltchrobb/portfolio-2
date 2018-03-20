@@ -1,7 +1,3 @@
-if (navigator.appName == 'Microsoft Internet Explorer'){
-    alert("This website does not display effectively on Internet Explorer - Please download a browser from this decade")
-}
-
 function port_flip() {
     document.getElementById('portfolio').classList.toggle('port_flipped'); 
     if (about_me.classList.contains("about_flipped")) {
